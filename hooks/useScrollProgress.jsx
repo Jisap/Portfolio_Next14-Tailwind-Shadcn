@@ -14,7 +14,6 @@ const useScrollProgress = () => {
       }                                                                        // Cuanto supone la altura actual entre el máximo que se puede desplazar 
     };
     
-    console.log(completion)
     window.addEventListener('scroll', updateScrollCompletion);
 
     return ()=> window.removeEventListener('scroll', updateScrollCompletion)

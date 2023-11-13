@@ -14,11 +14,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-    <ThemeProvider attribute='class' defaultTheme='light'>
-      <Header />
-      <body className={inter.className}>{children}</body>
-      <Footer />
-    </ThemeProvider>
+      <ThemeProvider attribute='class' defaultTheme='light'>
+        <body className={inter.className}>
+          <Header />
+            {children}
+          <Footer />
+        </body>
+      </ThemeProvider>
     </html>
   )
 }
