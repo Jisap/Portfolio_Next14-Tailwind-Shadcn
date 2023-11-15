@@ -35,6 +35,8 @@ const Hero = () => {
                 Download CV <Download size={18} />
               </Button>
             </div>
+            {/* socials */}
+            <Socials />
           </div>
           {/* image */}
           <div className='hidden xl:flex relative'>image</div>
