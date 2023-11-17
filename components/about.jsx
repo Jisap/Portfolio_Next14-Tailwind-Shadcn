@@ -1,7 +1,7 @@
 import Image from "next/image"
 import DevImg from "./DevImg"
-import { Tabs, TabsContent, TabList, TabsTrigger } from '@components/ui/tabs';
 import { User2, MailIcon, HomeIcon, PhoneCall, GraduationCap, Calendar, Briefcase } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 const infoData = [
   {
@@ -118,9 +118,20 @@ const About = () => {
   };
 
   return (
-    <section>
+    <section className="xl:h-[860px] pb-12 xl:py-24">
       <div className="container mx-auto"> 
-        <h2 className="section-title">About me</h2>
+        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+          About me
+        </h2>
+        <div>
+          {/* image */}
+          <div>
+            <DevImg 
+              containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative'
+              imgSrc='/about/developer.png'
+            />
+          </div>
+        </div>
       </div>
     </section>
   )
