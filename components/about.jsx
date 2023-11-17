@@ -118,7 +118,11 @@ const About = () => {
   };
 
   return (
-    <div>About</div>
+    <section>
+      <div className="container mx-auto"> 
+        <h2 className="section-title">About me</h2>
+      </div>
+    </section>
   )
 }
 
