@@ -133,10 +133,13 @@ const About = () => {
           </div>
           {/* tabs */}
           <div className="flex-1">
-            <Tabs>
+            <Tabs defaultValue='personal'>
               <TabsList>
-                <TabsTrigger>Personal Info</TabsTrigger>
+                <TabsTrigger value='personal'>Personal Info</TabsTrigger>
+                <TabsTrigger value='qualifications'>Qualifications</TabsTrigger>
+                <TabsTrigger value='skills'>Skills</TabsTrigger>
               </TabsList>
+              {/* tabs Content */}
             </Tabs>
           </div>
         </div>
