@@ -141,6 +141,12 @@ const About = () => {
               </TabsList>
               {/* tabs Content */}
             </Tabs>
+            <div className="text-lg mt-12 xl:mt-8">
+              {/* personal */}
+              <TabsContent value='personal'>Personal info</TabsContent>
+              <TabsContent value='qualifications'>Qualifications info</TabsContent>
+              <TabsContent value='skills'>Skills info</TabsContent>
+            </div>
           </div>
         </div>
       </div>
