@@ -1,6 +1,7 @@
 
 
-const ProjectCard = () => {
+const ProjectCard = ({project}) => {
+  console.log(project)
   return (
     <div>ProjectCard</div>
   )
