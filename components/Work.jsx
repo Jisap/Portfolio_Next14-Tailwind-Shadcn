@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Button } from "./ui/button"
 
 import 'swiper/css'
-import 'wiper/css/pagination'
+import 'swiper/css/pagination'
 
 import { Pagination } from 'swiper/modules'
 import ProjectCard from "./ProjectCard"
@@ -86,10 +86,11 @@ const projectDAta = [
 
 const Work = () => {
   return (
-    <section>
+    <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
         {/* text */}
-        <div className="bg-pink-100">
+        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col 
+        justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
             Lorem, impsum dolor sit amet conectetur adipisicing elit.
@@ -99,6 +100,13 @@ const Work = () => {
               All Projects
             </Button>
           </Link>
+        </div>
+
+        {/* slider */}
+        <div>
+          <Swiper>
+            
+          </Swiper>
         </div>
       </div>
     </section>
