@@ -86,9 +86,22 @@ const projectDAta = [
 
 const Work = () => {
   return (
-    <div>
-
-    </div>
+    <section>
+      <div className="container mx-auto">
+        {/* text */}
+        <div className="bg-pink-100">
+          <h2 className="section-title mb-4">Latest Projects</h2>
+          <p className="subtitle mb-8">
+            Lorem, impsum dolor sit amet conectetur adipisicing elit.
+          </p>
+          <Link href='/projects'>
+            <Button>
+              All Projects
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </section>
   )
 }
 
