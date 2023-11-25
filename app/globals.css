@@ -89,3 +89,10 @@
   before:bg-center before:w-[24px] before:h-[24px];
 }
 
+
+/* swiper bullets styles */
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  @apply bg-primary;
+}
+
