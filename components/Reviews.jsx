@@ -51,21 +51,38 @@ const reviewsData = [
 
 const Reviews = () => {
   return (
-    <section className="container mx-auto">
-      <h2 className="section-title mb-12 mx-auto">Reviews</h2>
-      {/* slider */}
-      <Swiper>
-        {
-          reviewsData.map((person, index) => {
-            return (
-              <SwiperSlide>
-                slide
-
-              </SwiperSlide>
-            )
-          })
-        }
-      </Swiper>
+    <section className="mb-12 xl:mb-32">
+      <div className="container mx-auto">
+        <h2 className="section-title mb-12 mx-auto">Reviews</h2>
+        {/* slider */}
+        <Swiper
+          slidesPerrView={1}
+          breakpoints={{
+            640: { slidesPerView:2 },
+            1400: { slidesPerView: 3},
+          }}
+          spaceBetween={30}
+          modules={[Pagination]}
+          pagination={{
+            clickable: true
+          }}
+          className="h-[350px]"
+        >
+          {
+            reviewsData.map((person, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <Card>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat
+                  </Card>
+                </SwiperSlide>
+              )
+            })
+          }
+        </Swiper>
+      </div>
     </section>
   )
 }
