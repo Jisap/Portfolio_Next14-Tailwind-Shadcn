@@ -50,7 +50,20 @@ const reviewsData = [
 const Reviews = () => {
   return (
     <section className="container mx-auto">
-      <h2 className="section-title">Reviews</h2>
+      <h2 className="section-title mb-12 mx-auto">Reviews</h2>
+      {/* slider */}
+      <Swiper>
+        {
+          reviewsData.map((person, index) => {
+            return (
+              <SwiperSlide>
+                slide
+
+              </SwiperSlide>
+            )
+          })
+        }
+      </Swiper>
     </section>
   )
 }
