@@ -72,10 +72,16 @@ const Reviews = () => {
             reviewsData.map((person, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <Card>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat
+                  <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
+                    <CardHeader className="p-0 mb-10">
+                      <div>
+                        {/* image */}
+                        <Image />
+                      </div>
+                    </CardHeader>
+                    <CardDescription className="text-lg text-muted-foreground">
+                      {person.review}
+                    </CardDescription>
                   </Card>
                 </SwiperSlide>
               )
