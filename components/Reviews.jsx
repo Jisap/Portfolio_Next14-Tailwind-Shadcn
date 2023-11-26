@@ -1,12 +1,14 @@
-'use clien'
+'use client'
 
 import Image from "next/image"
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card"
 
 import { Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from "swiper/react"
+
 import 'swiper/css'
 import 'swiper/css/pagination'
+
 
 const reviewsData = [
   {
