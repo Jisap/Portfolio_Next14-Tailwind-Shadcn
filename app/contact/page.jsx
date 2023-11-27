@@ -1,5 +1,6 @@
 'use client'
 
+import Form from "@/components/Form"
 import { HomeIcon, MailIcon, PhoneCall } from "lucide-react"
 
 
@@ -46,9 +47,7 @@ const Contact = () => {
             </div>
           </div>
           {/* form */}
-          <form>
-            form
-          </form>
+          <Form />
         </div>
       </div>
     </section>
